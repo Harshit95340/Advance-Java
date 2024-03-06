@@ -48,8 +48,10 @@ public class App {
 				break;
 			}
 			default:
+				sc.close();
 				throw new IllegalArgumentException("Unexpected value: " + ch);
 		}
+		sc.close();
 	}
 
 }
